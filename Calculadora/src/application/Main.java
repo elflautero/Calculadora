@@ -23,7 +23,7 @@ public class Main extends Application { 	// classe de visualização e controle ex
 	public void start (Stage stage) throws Exception {  	// método start (lógica e componentes)
 		
 		AnchorPane pane = new AnchorPane(); 					//criar um painel
-		pane.setPrefSize(300, 400);
+		pane.setPrefSize(280, 400);
 		
 		
 		// INITCOMPONENTS
@@ -40,6 +40,7 @@ public class Main extends Application { 	// classe de visualização e controle ex
 		Button btnEqual = new Button("=");
 		Button btnPlus = new Button("+");
 		
+		// comentário para commit de segurança
 	
 		pane.getChildren().addAll(txtViewArit, txtViewAnsw, btnZero,
 				btnDot, btnEqual, btnPlus);						// adicionar todos componentes para o painel
@@ -55,13 +56,13 @@ public class Main extends Application { 	// classe de visualização e controle ex
 				txtViewArit.setLayoutX(5); 	//início horizontal
 				txtViewArit.setLayoutY(5); 		// início vertical
 				txtViewArit.setMinSize(270, 10);	// tamanho mínimo
-				txtViewArit.setPrefSize(290, 60);		// tamanho preferencial
+				txtViewArit.setPrefSize(270, 60);		// tamanho preferencial
 				
 				
 				txtViewAnsw.setLayoutX(5);
 				txtViewAnsw.setLayoutY(70);
 				txtViewAnsw.setMinSize(270, 10);
-				txtViewAnsw.setPrefSize(290, 60);
+				txtViewAnsw.setPrefSize(270, 60);
 				
 				btnZero.setLayoutX(5);
 				btnZero.setLayoutY(280);
